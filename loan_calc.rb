@@ -33,22 +33,22 @@ def validate_num(num)
   (num.to_f.to_s == num || num.to_i.to_s == num) && num.to_f > 0
 end
 
-def get_number(msg, error_msg)
+def get_number(msg)
   input = nil
   loop do
     prompt(msg)
     input = gets.chomp
     return input if validate_num(input)
-    prompt(error_msg)
+    prompt(MESSAGES['error_msg'])
   end
 end
 
 prompt(messages('welcome'))
 
 loop do
-  loan_amount = get_number(messages('amount_msg'), messages('error_msg')).to_f
-  apr = get_number(messages('apr_msg'), messages('error_msg')).to_f / 100
-  loan_period = get_number(messages('period_msg'), messages('error_msg')).to_f
+  loan_amount = get_number(messages('amount_msg')).to_f
+  apr = get_number(messages('apr_msg')).to_f / 100
+  loan_period = get_number(messages('period_msg')).to_f
 
   monthly_rate = apr / 12
   loan_period_months = loan_period * 12

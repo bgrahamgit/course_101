@@ -1,0 +1,62 @@
+
+Informal:
+1. define a method that takes two integers
+   - return sum of integers
+
+2. define a method that takes an array of strings
+   - assign a new variable to an empty string
+   - iterate through the array
+     - concatenate each string to the newly assigned variable
+   - return the new string variable
+
+3. define a method that takes an array of integers
+   - assign an empty array to a new variable
+   - add every item with an even index to the new array
+   - return the new array
+
+
+Formal:
+1. START
+   GET first integer from the user
+   SET user input to integer_1
+
+   GET second integer from the user
+   SET user input to integer_2
+
+   PRINT integer_1 + integer_2
+
+   END
+
+2. START
+   define new method that takes an array of strings
+   SET iterator = 1
+   SET new_string = ''
+
+   WHILE iterator < length of array
+     new_string = new_string + current_string
+
+     iterator += 1
+
+   PRINT new_string
+
+   END
+
+
+3. START
+   SET method that take to an array of numbers
+
+   SET iterator = 1
+   SET new_array = []
+
+   WHILE iterator < length of array
+     IF index is even
+       push number to new_array
+     ELSE
+       go to next iteration
+
+     iterator += 1
+   PRINT new_array
+
+   END
+
+

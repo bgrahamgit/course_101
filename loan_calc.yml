@@ -1,0 +1,8 @@
+welcome: Welcome to Loan Calculator!
+amount_msg: Please enter your loan amount
+apr_msg: Please enter the interest rate on your loan (for a rate of 5%, enter 5)
+period_msg: Please enter the loan period in years
+continue_msg: Would you to calculate another payment amount? (Y/N)
+farewell_msg: Thank you for using Loan Calculator!
+error_msg: Invalid input. Please enter a non-zero number.
+

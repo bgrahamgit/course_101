@@ -1,23 +1,3 @@
-
-# Build a loan payment calculator
-# Take 3 user inputs:
-#   -define function for displaying of messages
-#   -define function that takes a message and returns a float
-#   -define a function that validates the inputs as floats
-#   -assign the values to three variables
-#     -loan amount
-#     -APR
-#     -loan period
-
-# calculate monthly rate
-#   -assign to new variable
-# calculate loan period in months
-#   -assign to new variable
-# calculate monthly mortgage payment amount
-#   -assign to payment variable
-# display monthly payment to user
-# Ask if user would like to repeat
-
 require 'yaml'
 MESSAGES = YAML.load_file('loan_calc.yml')
 

@@ -54,7 +54,7 @@ loop do
   loan_period_months = loan_period * 12
 
   monthly_pmt = loan_amount * (monthly_rate /
-                (1 - (1 + monthly_rate)**(-loan_period_months)))
+                (1 - (1 + monthly_rate)**-loan_period_months))
 
   puts "=> The monthly payment for a #{loan_period} year,
          $#{loan_amount} loan at #{apr * 100}% is $#{monthly_pmt}"
